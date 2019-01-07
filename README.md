@@ -9,7 +9,7 @@
 
 - `sudo adduser grader`
 - `su - grader`
-
+--------------------------
 ### Generate a key pair
 - `mkdir .ssh && chmod 700 `
 - `cd ~/.ssh`
@@ -30,6 +30,8 @@ copy the public key and place it on the server:
 
 - After saving the changes, login as grader user:
  `ssh -p 2200 -i grader.pem grader@ec2-52-14-146-163.us-east-2.compute.amazonaws.com`
+ 
+ ---------------------------
 ### Firewall
 Deny all the incoming requests:
 - `sudo ufw default deny incoming`
