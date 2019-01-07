@@ -2,6 +2,7 @@
 - The objective is to turn a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 - Server Public IP: http://ec2-52-14-146-163.us-east-2.compute.amazonaws.com/
+- Server IP Address: 52.14.146.163
 
 # Configuration Steps
  
@@ -9,6 +10,8 @@
 
 - `sudo adduser grader`
 - `su - grader`
+
+- grader password is **3164978953**
 --------------------------
 ### Generate a key pair
 - `mkdir .ssh && chmod 700 `
