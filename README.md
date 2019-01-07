@@ -2,8 +2,10 @@
 - The objective is to turn a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 - Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 - Server Public IP: http://ec2-52-14-146-163.us-east-2.compute.amazonaws.com/
-#Configuration Steps 
-###Add a grader user.
+
+# Configuration Steps
+ 
+### Add a grader user.
 
 - `sudo adduser grader`
 - `su - grader`
@@ -28,7 +30,7 @@ copy the public key and place it on the server:
 
 - After saving the changes, login as grader user:
  `ssh -p 2200 -i grader.pem grader@ec2-52-14-146-163.us-east-2.compute.amazonaws.com`
-###Firewall
+### Firewall
 Deny all the incoming requests:
 - `sudo ufw default deny incoming`
 
@@ -51,7 +53,7 @@ Enable firewall
 - `sudo ufw enable`
 
 ----------------------------------
-###Application deployment 
+### Application deployment 
 
 installing gunicorn: (Python WSGI HTTP Server for UNIX.)
 - `pip install gunicorn`
