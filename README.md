@@ -68,4 +68,10 @@ System packages have been updated to most recent versions:
 - `sudo apt-get update`
 - `sudo apt-get upgrade`
 
+## Third party resources 
+
+Apache2: `sudo apt-get install apache2`
+
+mod_wsgi: `sudo apt-get install libapache2-mod-wsgi`
+
 
